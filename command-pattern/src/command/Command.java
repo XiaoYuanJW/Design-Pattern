@@ -1,11 +1,11 @@
-package service;
+package command;
 
 /**
- * Order
+ * Command
  *
  * @author YuanJW
  * @date 2023/06/02
  */
-public interface Order {
+public interface Command {
     void execute();
 }

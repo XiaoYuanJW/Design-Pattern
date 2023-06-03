@@ -1,16 +1,14 @@
-package service.impl;
+package service;
 
-import command.Stock;
-import service.AbstractStock;
+import domain.Stock;
 
 /**
  * SellStock
  *
  * @author YuanJW
- * @date 2023/06/02
+ * @date 2023/06/03
  */
 public class SellStock extends AbstractStock {
-
     public SellStock(Stock stock) {
         super(stock);
     }

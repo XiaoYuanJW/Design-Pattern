@@ -1,18 +1,18 @@
-import broker.Broker;
-import command.Stock;
-import service.impl.BugStock;
-import service.impl.SellStock;
+import domain.Stock;
+import invoker.Invoker;
+import service.BuyStock;
+import service.SellStock;
 
 public class Main {
     public static void main(String[] args) {
         Stock stock = new Stock();
         SellStock sellStock = new SellStock(stock);
-        BugStock bugStock = new BugStock(stock);
+        BuyStock buyStock = new BuyStock(stock);
 
-        Broker broker = new Broker();
-        broker.takeOrder(sellStock);
-        broker.takeOrder(bugStock);
+        Invoker invoker = new Invoker();
+        invoker.takeCommand(sellStock);
+        invoker.takeCommand(buyStock);
 
-        broker.placeOrders();
+        invoker.placeCommand();
     }
 }
