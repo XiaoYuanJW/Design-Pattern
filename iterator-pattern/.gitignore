@@ -1,5 +1,4 @@
-# 项目排除路径
-/out/### Simple template template
+### Simple template template
 HELP.md
 /target/
 !.mvn/wrapper/maven-wrapper.jar
