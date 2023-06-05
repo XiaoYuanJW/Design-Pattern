@@ -1,7 +1,7 @@
 package menento;
 
 /**
- * Menento  【备忘录】
+ * Menento  【备忘录：被恢复的对象的状态】
  *
  * @author YuanJW
  * @date 2023/06/04

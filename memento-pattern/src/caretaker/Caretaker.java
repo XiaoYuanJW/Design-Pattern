@@ -3,7 +3,7 @@ package caretaker;
 import menento.Menento;
 
 /**
- * Caretaker    【负责人】
+ * Caretaker    【负责人：从Memento中恢复对象状态】
  *
  * @author YuanJW
  * @date 2023/06/04

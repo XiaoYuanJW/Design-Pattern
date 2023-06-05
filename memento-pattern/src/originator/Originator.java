@@ -3,7 +3,7 @@ package originator;
 import menento.Menento;
 
 /**
- * Originator   【初始对象】
+ * Originator   【初始对象：创建并在Memento对象中存储状态】
  *
  * @author YuanJW
  * @date 2023/06/04
