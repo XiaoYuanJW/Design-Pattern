@@ -2,12 +2,11 @@ import observer.BinaryObserver;
 import observer.HexObserver;
 import observer.OctalObserver;
 import subject.ConcreteSubject;
-import subject.Subject;
 
 public class Main {
     public static void main(String[] args) {
 
-        Subject subject = new ConcreteSubject();
+        ConcreteSubject subject = new ConcreteSubject();
 
         BinaryObserver binaryObserver = new BinaryObserver(subject);
         HexObserver hexObserver = new HexObserver(subject);

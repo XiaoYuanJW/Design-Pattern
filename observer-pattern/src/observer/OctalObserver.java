@@ -13,7 +13,7 @@ public class OctalObserver extends Observer {
     public OctalObserver(Subject subject) {
         this.subject = subject;
         // 添加观察者
-        subject.registerObserver(this);
+        subject.attach(this);
     }
 
     @Override

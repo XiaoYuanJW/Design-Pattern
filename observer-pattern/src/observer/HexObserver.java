@@ -13,7 +13,7 @@ public class HexObserver extends Observer {
     public HexObserver(Subject subject) {
         this.subject = subject;
         // 添加观察者
-        subject.registerObserver(this);
+        subject.attach(this);
     }
 
     @Override

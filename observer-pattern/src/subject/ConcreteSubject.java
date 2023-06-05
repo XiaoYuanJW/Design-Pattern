@@ -12,6 +12,7 @@ import java.util.List;
  * @date 2023/06/05
  */
 public class ConcreteSubject implements Subject {
+    // 使用一个ArrayList存放观察者
     private List<Observer> observers = new ArrayList<>();
 
     private int number;
@@ -25,8 +26,14 @@ public class ConcreteSubject implements Subject {
         notifyObservers();
     }
 
-    public void registerObserver(Observer observer) {
+    @Override
+    public void attach(Observer observer) {
         observers.add(observer);
+    }
+
+    @Override
+    public void detach(Observer observer) {
+        observers.remove(observer);
     }
 
     public void notifyObservers() {
